@@ -1,4 +1,4 @@
-package com.tavant.migration.Nfs2S3thumb;
+package com;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
