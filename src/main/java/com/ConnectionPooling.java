@@ -1,4 +1,4 @@
-package com.tavant.migration.nfs2s3cuts;
+package com;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
