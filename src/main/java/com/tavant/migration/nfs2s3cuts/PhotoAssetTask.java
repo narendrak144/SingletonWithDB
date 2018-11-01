@@ -66,18 +66,7 @@ static String BASEPATH = "/assets/images";
 		System.out.println("running createPaths() .......");
 		List<String> idlist = new ArrayList<>();
 		
-		String SQL = "SELECT ITEM_ID FROM ITEM_LIST WHERE FIELD_ID IN ("
-				+ " SELECT LIST_FIELD_ID FROM LIST_FIELD WHERE FIELD_TYPE_ASSOCIATION_ID IN (1162) AND PARENT_ITEM_ID IN ("
-				+ " select i.ITEM_ID  from item i "
-				+ " JOIN item_app_account_xref appref on appref.item_id = i.item_id AND appref.APP_ID = 215"
-				+ " WHERE i.ITEM_TYPE_ID=1156 AND i.state = 'A' AND i.LAST_BETA_PUBLISH IS NULL AND i.LAST_PUBLISH IS NULL)) ";
-		
-		String photoAssetSqlUnpublished = "select i.ITEM_ID  from item i"
-				+ "	JOIN item_app_account_xref appref on appref.item_id = i.item_id AND appref.APP_ID = 215"
-				+ " WHERE i.ITEM_TYPE_ID=1156 AND i.state = 'A' AND i.LAST_BETA_PUBLISH IS NULL AND i.LAST_PUBLISH IS NULL";
-		String photoAssetSql = "select DISTINCT (i.ITEM_ID)  from item i"
-				+ "	JOIN item_app_account_xref appref on appref.item_id = i.item_id AND appref.APP_ID = 215"
-				+ " WHERE i.ITEM_TYPE_ID=1156 AND (i.created_date >'16-OCT-18' OR i.modified_date >'16-OCT-18')";
+		String photoAssetSql = "Any Query  which provides result ........";
 		
 		try {
 			Connection con = ConnectionPooling.INSTACE.getConnection();
